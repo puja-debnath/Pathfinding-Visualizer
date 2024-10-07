@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
 
+import "./App.css";
+import PathfindingVisualizer from "./Pathfinding-visualizer/Visualizer";
 function App() {
-  const [count, setCount] = useState(0)
+  const arr = [1, 2, 3, 4, 5, 6];
 
   return (
-   <></>
-  )
+    <div>
+      <PathfindingVisualizer   />
+    </div>
+  );
 }
 
-export default App
+export default App;
