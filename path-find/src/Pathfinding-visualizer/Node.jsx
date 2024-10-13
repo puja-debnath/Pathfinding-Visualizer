@@ -1,17 +1,14 @@
 import { Component } from "react";
 
-export default class Node extends Component {
-  render() {
-    const {
-      row,
-      col,
-      isFinish,
-      isStart,
-      isEnter,
-      onMouseEnter,
-      onMouseDown,
-      onMouseUp,
-    } = this.props;
+export const  Node =  ({ row,
+  col,
+  isFinish,
+  isStart,
+  isEnter,
+  onMouseEnter,
+  onMouseDown,
+  onMouseUp})   =>  {
+  
     const classname = isFinish
       ? "node-finish"
       : isStart
@@ -29,4 +26,4 @@ export default class Node extends Component {
       </div>
     );
   }
-}
+
